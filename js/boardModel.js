@@ -98,13 +98,11 @@ GameBoard.prototype.randomCoord = function(){
 
 //pick point on the board corresponding to the top left corner of room, build room from that origin column by column until the room width is reached, or the edge of the map.
 GameBoard.prototype.generateRoom = function(room){
-
-      for(var x = room.x; x < (room.x + room.width) && (x <= this.board.length - 1); x++){
-            for(var y = room.y; y < (room.y + room.height) && y <= (this.board[0].length -1); y++){
-                  this.board[y][x] = 1;
-            }
-      }
-      // console.log(this.board);
+  for(var x = room.x; x < (room.x + room.width) && (x <= this.board.length - 1); x++){
+        for(var y = room.y; y < (room.y + room.height) && y <= (this.board[0].length -1); y++){
+              this.board[y][x] = 1;
+        }
+  }
 }
 
 

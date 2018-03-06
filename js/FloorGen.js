@@ -29,8 +29,6 @@ function generateExit(){
         exit = this.game.add.isoSprite(x - (TILE_POS * 2) - 26, y - (TILE_POS ) + 2, 15, 'exit-north', 15, exitGroup);
         this.game.physics.isoArcade.enable(this.exit);
         exit.body.setSize(65, 75, 100, 75, 75);
-        console.log(x - (TILE_POS * 2) - 26);
-        console.log( y - (TILE_POS) - 22);
     }
     else{
         randIndex = Math.floor((Math.random() * westSpots.length - 1));
@@ -39,8 +37,6 @@ function generateExit(){
         exit = this.game.add.isoSprite(x - (TILE_POS * 2) - 12, y - (TILE_POS) - 11, 15, 'exit-west', 15, exitGroup);
         this.game.physics.isoArcade.enable(this.exit);
         exit.body.setSize(80, 80, 100, 45, 85);
-        console.log(x - (TILE_POS * 2) - 30);
-        console.log(y - (TILE_POS) - 18);
     }
     exit.tint = 0x000000;
     exit.body.collideWorldBounds = true;

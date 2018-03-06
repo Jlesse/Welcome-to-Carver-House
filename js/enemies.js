@@ -120,9 +120,9 @@ function setPathFinderInterval(ghost) {
             var currentGhostYtile = Math.round((ghost.sprite.body.position.y + yEnemyChange) / TILE_POS);
 
             easyStar.findPath(currentGhostXtile, currentGhostYtile, currentPlayerXtile, currentPlayerYtile, function( path ) {
-                if (path === null) {
-                }
-                if (path) {
+                // if (path === null) {
+                // }
+                if (path && path[1]) {
                   currentNextPointX = path[1].x;
                     currentNextPointY = path[1].y;
                 }
@@ -189,7 +189,7 @@ function setGhostPaths(){
 function moveGhost(ghost){
           currentPlayerXtile = Math.floor(player.sprite.body.position.x / TILE_POS);
           currentPlayerYtile = Math.floor(player.sprite.body.position.y / TILE_POS);
-          console.log(ghost.enemyDirection);
+
           // Move the ENEMY
           if (ghost.enemyDirection == "N") {
             ghost.sprite.body.velocity.x = 0;

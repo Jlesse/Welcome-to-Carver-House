@@ -111,7 +111,6 @@ function dragStop(sprite, pointer){
   sprite.scale.setTo(0.75, 0.75);
   game.iso.unproject(game.input.activePointer.position, pointer);
   var inBound = exit.isoBounds.containsXY(pointer.x - 24, pointer.y - 14);
-  console.log(inBound);
   if(inBound){
     if(exit.key === "exit-north"){
       exit.loadTexture("exit-north-unlock", 0, false);

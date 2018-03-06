@@ -134,20 +134,20 @@ BasicGame.Game.prototype =
   render: function () {
 
     // emptyGroup.forEach(function (tile) {
-    //   game.debug.body(tile, 'rgba(189, 221, 235, 0.6)', false);
+    //   // game.body(tile, 'rgba(189, 221, 235, 0.6)', false);
     // });
 
     // exitGroup.forEach(function (exit) {
-    //      game.debug.body(exit, 'rgba(189, 221, 235, 0.6)', false);
-    //      game.debug.spriteBounds(exit, 'pink', false);
+    //      // game.body(exit, 'rgba(189, 221, 235, 0.6)', false);
+    //      // game.spriteBounds(exit, 'pink', false);
     //  });
 
-  //   enemyGroup.forEach(function(enemy){
-  //     game.debug.body(enemy, 'rgba(189, 221, 235, 0.6)', false);
-  //   });
+    // enemyGroup.forEach(function(enemy){
+    //   // game.body(enemy, 'rgba(189, 221, 235, 0.6)', false);
+    // });
 
-  //   game.debug.body(player, 'rgba(189, 221, 235, 0.6)', false);
+    // game.body(player, 'rgba(189, 221, 235, 0.6)', false);
 
-  // }
+  }
 
 };
